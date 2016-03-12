@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body>
+
+<header>
+
+CMPE 280 Assignment 1
+
+</header>
+
+<div class="container">
+    <div class="questionContainer">
+        <div class="loginHeader">Question 4</div>
+        <div class="questionWrapper">
+            <div class="contentDiv">
+                <div>
+                    Watch the video and answer the following question.
+                    What is the source as mentioned in the video?
+
+                </div>
+                <div class="middleContent">
+                    <div class="topOptions">
+                        <div class="leftOptions">
+                            <input  type="radio" name="videoques" value="true">
+                            Nasa.Gov
+                        </div>
+                        <div class="rightOptions">
+                            <input  type="radio" name="videoques"  value="b">
+                            Data.Gov
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bottomOptions">
+                        <div class="leftOptions">
+                            <input  type="radio" name="videoques"  value="c">
+                            Facebook
+                        </div>
+                        <div class="rightOptions">
+                            <input  type="radio" name="videoques"  value="true">
+                            XYZ.net
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <br>
+                    <div class="buttonContainer">
+                        <button class="submitButton loginButton" onclick="checkAnswer('videoques')">Submit & Next Question</button>
+                        <button class="submitButton loginButton" onclick="clearSelection('videoques')">Cancel & Clear Selection</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="multimediaDiv">
+
+                <video controls="controls" poster="https://i.ytimg.com/vi/ih9jPaZct1w/maxresdefault.jpg"
+                       width="410"><source src="http://www.nasa.gov/downloadable/videos/expedition_40_undocks_ending_mission.mp4"><img alt="HTML5 MP4/H.264 Video" src="https://i.ytimg.com/vi/ih9jPaZct1w/maxresdefault.jpg" width="640" height="360" title="No video playback capabilities, please download the video below"></video>
+                <p>Source: Expedition 40 Undocks Ending Mission</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<footer>
+    CMPE 280 Assignment 1
+</footer>
+</body>
+</html>

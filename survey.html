@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body>
+
+<header>
+
+CMPE 280 Assignment 1
+
+</header>
+
+<div class="container">
+    <div class="questionContainer">
+        <div class="loginHeader">Survey</div>
+        <div class="questionWrapper">
+            <div class="contentQuestionDiv">
+                <div>
+                    How did you like the center?
+                </div><br>
+                <div>
+                    <div class="commentsLabel">Comments:</div>
+                    <div class="commentsText">
+                        <textarea name="textarea" rows="5" cols="80"></textarea>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <p>Select Test Area Location:</p>
+                    <fieldset class="fieldSetSurvey fieldSetLeft">
+
+                        <label> City:
+                            <input type="text" name="testAreaLocation" list="TestAreaLocations">
+                            <datalist id="TestAreaLocations">
+                                <option value="San Jose">
+                                </option>
+                                <option value="San Francisco">
+                                </option>
+                                <option value="Santa Clara">
+                                </option>
+                                <option value="Milpitas">
+                                </option>
+                                <option value="Willow Glen">
+                                </option>
+                                <option value="Sunnyvale">
+                                </option>
+                                <option value="Alameda">
+
+                                </option>
+                            </datalist>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset class="fieldSetSurvey fieldSetRight">
+
+                        <label> Room Number #:
+                            <input type="text" name="testAreaLocation" list="TestAreaRooms">
+                            <datalist id="TestAreaRooms">
+                                <option value="337">Room 337</option>
+                                <option value="122">Room 122</option>
+                                <option value="189">Room 189</option>
+                                <option value="101">Room 101</option>
+                                <option value="522">Room 522</option>
+                            </datalist>
+                        </label>
+
+                    </fieldset>
+
+                    <div class="clear"></div>
+                </div>
+                <br>
+                <div class="buttonContainer">
+                    <button class="submitButton loginButton" onclick="getScoreCard()">Submit & Get Score</button>
+                    <button class="submitButton loginButton" onclick="getScoreCard()">Skip & Get Score</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    CMPE 280 Assignment 1
+</footer>
+</body>
+</html>

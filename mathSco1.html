@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body onload="draw()">
+
+<header>
+
+280 Assignment 1
+
+</header>
+
+<div class="container">
+    <div class="questionContainer">
+        <div class="loginHeader">Question 1</div>
+        <div class="questionWrapper">
+            <div class="contentDiv">
+                <div>
+                    Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line.
+
+                </div>
+                <div class="middleContent">
+
+                    <div class="topOptions">
+                    <span class="leftOptions">
+                    <input  type="radio" name="mathques" value="a">
+                    <math xmlns='http://www.w3.org/1998/Math/MathML' >
+                        <mrow>
+                            <mrow>
+                                <mi>y</mi>
+                                <mo>=</mo>
+                            </mrow>
+                            <mrow>
+                                <mrow>
+                                    <mn>m</mn>
+                                    <mi>x</mi>
+                                </mrow>
+                                <mo>+</mo>
+                                <mn>b</mn>
+                            </mrow>
+                        </mrow>
+                    </math>
+                        </span>
+                    <span class="rightOptions">
+                    <input  type="radio" name="mathques" value="b">
+                    <math xmlns='http://www.w3.org/1998/Math/MathML' >
+                        <mrow>
+                            <mrow>
+                                <mrow>
+                                    <msup>
+                                        <mrow>
+                                            <mo>(</mo>
+                                            <mrow>
+                                                <mi>x</mi>
+                                                <mo>-</mo>
+                                                <mi>h</mi>
+                                            </mrow>
+                                            <mo>)</mo>
+                                        </mrow>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                                <mo>+</mo>
+                                <mrow>
+                                    <msup>
+                                        <mrow>
+                                            <mo>(</mo>
+                                            <mrow><mi>y</mi>
+                                                <mo>-</mo>
+                                                <mi>k</mi>
+                                            </mrow>
+                                            <mo>)</mo>
+                                        </mrow>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                    <msup>
+                                        <mi>r</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </mrow>
+                            </mrow>
+                        </mrow>
+                    </math>
+                        </span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bottomOptions">
+                    <span class="leftOptions">
+                    <input  type="radio" name="mathques" value=true>
+                    <math xmlns='http://www.w3.org/1998/Math/MathML' >
+                        <mrow>
+                            <mrow>
+                                <mrow>
+                                    <mrow>
+                                        <mi>y</mi>
+                                        <mo>-</mo>
+                                        <mi>y1</mi>
+                                    </mrow>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                    <mi>m</mi>
+                                    <mo>(</mo>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>-</mo>
+                                        <mi>x1</mi>
+                                    </mrow>
+                                    <mo>)</mo>
+                                </mrow>
+
+                            </mrow>
+                        </mrow>
+                    </math>
+                        </span>
+                    <span class="rightOptions">
+                    <input  type="radio" name="mathques" value="d">
+                    <math xmlns='http://www.w3.org/1998/Math/MathML' >
+                        <mrow>
+                            <mrow>
+                                <mrow>
+                                    <mrow>
+                                        <mi>y</mi>
+                                        <mo>-</mo>
+                                        <mi>y2</mi>
+                                    </mrow>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                    <mfrac>
+                                        <mrow>
+                                            <mi>y2</mi>
+                                            <mo>-</mo>
+                                            <mi>y1</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mi>x2</mi>
+                                            <mo>-</mo>
+                                            <mi>x1</mi>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo>(</mo>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>-</mo>
+                                        <mi>x2</mi>
+                                    </mrow>
+                                    <mo>)</mo>
+                                </mrow>
+
+                            </mrow>
+                        </mrow>
+                    </math>
+                        </span>
+                        <div class="clear"></div>
+                        <br>
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="submitButton loginButton" onclick="checkAnswer('mathques')">Submit & Next Question</button>
+                        <button class="submitButton loginButton" onclick="clearSelection('mathques')">Cancel & Clear Selection</button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="mmDiv" class="multimediaDiv">
+                <canvas id="canvasContainer" width="330" height="250"></canvas>
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    CMPE 280 Assignment 1
+</footer>
+</body>
+</html>

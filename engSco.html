@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body>
+
+<header>
+
+CMPE 280 Assignment 1
+
+</header>
+
+<div class="container">
+    <div class="questionContainer">
+        <div class="loginHeader">Question 3</div>
+        <div class="questionWrapper" style=" margin-bottom: 2%;">
+
+            <div class="contentDiv">
+                <div>As per the latest twitter news, complete the article snippet given by selecting
+                    appropriate choices for the blanks</div>
+                <div class="middleContent">
+                    <div class="topLeftOptions">
+                        <div>
+                            <input  type="radio" name="engques1" onclick="replaceMoneyValue('650')" value="true">
+                            Option 1 Mark 1: $650
+                        </div>
+                        <div>
+                            <input  type="radio" name="engques1" onclick="replaceMoneyValue('550')" value="b">
+                            Option 2 Mark 1: $550
+                        </div>
+                        <div>
+                            <input  type="radio" name="engques1" onclick="replaceMoneyValue('450')" value="c">
+                            Option 3 Mark 1: $450
+                        </div>
+                    </div>
+                    <div class="topRightOptions">
+                        <div>
+                            <input  type="radio" name="engques2" onclick="replaceCompanyValue('Twitter')" value="true">
+                            Option 1 Mark 2: Twitter
+                        </div>
+                        <div>
+                            <input  type="radio" name="engques2" onclick="replaceCompanyValue('Google')" value="d">
+                            Option 2 Mark 2: Google
+                        </div>
+                        <div>
+                            <input  type="radio" name="engques2" onclick="replaceCompanyValue('Facebook')" value="e">
+                            Option 3 Mark 2: Facebook
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <br>
+                    <div class="buttonContainer">
+                        <button class="submitButton loginButton" onclick="checkEnglishAnswer()">Submit & Next Question</button>
+                        <button class="submitButton loginButton" onclick="clearQuesSelection('engques1','engques2')">Cancel & Clear Selection</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="multimediaDiv">
+                <div class="quesText">
+                    As per the latest twitter news, complete the article snippet given by selecting appropriate choices for the blanks.
+                    "Twitter wants more cash.
+                    The company announced two $<mark> <input class="inputValue" type="text" id="cashValue"/> </mark> million debt offerings in a filing today,
+                    each with a potential $100 increase provided that the sales are oversubscribed.
+                    Assuming full tip, including the $100 million boosters,
+                    <input class="inputValue companyValue" type="text" id="companyName"/> will raise up to $1.5 billion with the two offerings."
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<footer>
+    CMPE 280 Assignment 1
+</footer>
+</body>
+</html>

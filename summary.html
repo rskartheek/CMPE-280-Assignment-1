@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+</head>
+<body onload="getSummary()">
+
+<header>
+
+CMPE 280 Assignment 1
+
+</header>
+
+<div style="margin-bottom:9%" class="container">
+    <div class="questionContainer">
+        <div class="loginHeader">Summary</div>
+        <div class="questionWrapper">
+            <div class="summaryContainer">
+
+                <details>
+                    <summary>Quantiative Section </summary>
+                    <div>
+                        <p><b>Number of questions answered:<span id="quantanswered"></span></b></p>
+                        <p><b>Number of correct answers:<span id="quantcorrect"></span></b></p>
+                        <p><b>Score:<span id="quantscore"></span></b></p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Reading Section</summary>
+                    <div>
+                        <p><b>Number of questions answered:<span id="englishanswered"></span></b></p>
+                        <p><b>Number of correct answers:<span id="englishcorrect"></span></b></p>
+                        <p><b>Score:<span id="englishscore"></span></b></p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Audio/Video Section</summary>
+                    <div>
+                        <p><b>Number of questions answered:<span id="videoanswered"></span></b></p>
+                        <p><b>Number of correct answers:<span id="videocorrect"></span></b></p>
+                        <p><b>Score:<span id="videoscore"></span></b></p>
+                    </div>
+                </details>
+                <br>
+                <div style="text-align: center;" class="buttonContainer">
+                    <div style="margin-bottom:2%;">Thank You</div>
+                    <button class="submitButton loginButton" onclick="exit()">Finish</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+    CMPE 280 Assignment 1
+</footer>
+</body>
+</html>
